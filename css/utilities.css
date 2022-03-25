@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+.tooltips:hover {
+    cursor: pointer;
+    position: relative;
+}
+.tooltips span {
+    display: none;
+}
+.tooltips:hover span {
+    border: #666 2px dotted;
+    padding: 2px;
+    display: block;
+    /* height: 18px; */
+    z-index: 100;
+    background: #e3e3e3;
+    left: 40px;
+    width: fit-content;
+    position: absolute;
+    top: -10%;
+    font-size: .6rem;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    position: relative;
+    background-color: #212121 !important; 
+    color: #fafafa  !important;
+    font-size: 14px;
+    line-height: 22px;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+.home-text .buttons a{
+    border-radius: 8px;
+    padding: 5px 12px;
+    border: none;
+    font-size: .9rem;
+    font-weight: 300;
+    transition: all .3s ease-in-out;
+}
+.home-text .buttons a:hover{
+    transform: scale(1.09);
+    transform: translateY(-3px);
+}
+.home-text .about{
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: .9rem;
+}
+.letters{
+    background: -webkit-linear-gradient(right, #d61a5e, #ff8c05);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title h2, .title p{
+    position: relative;
+    padding-bottom: 20px;
+}
+ .title h2::before, .title p::before{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 40px;
+    height: 3px;
+    background: #FF3D4F;
+}
+.title p{
+    padding-bottom: 2px;
+    display: inline-block;
+}
+.title p::before{
+    width: 100%;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.counter{
+    font-weight: 700;
+}
+
+.pop{
+    animation: pop 2s  500ms infinite  cubic-bezier(0.04, 0.96, 0.15, 1.01);
+}
+
+@keyframes pop {
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+input, textarea{
+    width: 100%;
+}
+textarea{
+    resize: vertical;
+}
