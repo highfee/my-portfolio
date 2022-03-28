@@ -331,6 +331,8 @@
 .accolades>div{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .accolades .cards{
     background-color: #262626;

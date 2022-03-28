@@ -71,11 +71,11 @@ window.addEventListener('scroll', () => {
 //     }
 // });
 
-var submitBtn = document.querySelector('#submit')
+// var submitBtn = document.querySelector('#submit')
 
-submitBtn.onclick = function () {
-    return false;
-}
+// submitBtn.onclick = function () {
+//     return false;
+// }
 
 
 
