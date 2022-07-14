@@ -25,7 +25,21 @@ window.addEventListener('scroll', () => {
     }else{
         verticalNav.style.display = 'none'
     }
+    if(window.innerWidth <= 768){
+        verticalNav.style.display = 'block'
+    }
 })
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 500){
+      document.getElementById('to-top').style.display = 'block'
+    }else{
+        document.getElementById('to-top').style.display = 'none'
+    }
+})
+ 
+
+
 
  // Portfolio Popp Up
  $('.portfolio-gallery').each(function () {
@@ -37,45 +51,30 @@ window.addEventListener('scroll', () => {
     });
 });
 
-
-
-
-// $('.counter').counterUp({
-//     delay: 10,
-//     time: 1000
-// });
-
   $('.counter').countTo();
 
 
 
-// $('.portfolio-popup').magnificPopup({
-//     delegate: 'a',
-//     type: 'image',
-//     gallery: {
-//         enabled: true
-//     },
-//     mainClass: 'mfp-with-zoom',
-//     navigateByImgClick: true,
-//     arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-//     tPrev: 'Previous (Left arrow key)',
-//     tNext: 'Next (Right arrow key)',
-//     tCounter: '<span class="mfp-counter">%curr% of %total%</span>',
-//     zoom: {
-//         enabled: true,
-//         duration: 300,
-//         easing: 'ease-in-out',
-//         opener: function (openerElement) {
-//             return openerElement.is('img') ? openerElement : openerElement.find('img');
-//         }
-//     }
-// });
 
-// var submitBtn = document.querySelector('#submit')
 
-// submitBtn.onclick = function () {
-//     return false;
-// }
+
+// navabr toggler
+const bar = document.getElementById('bar')
+
+bar.addEventListener('click', (e) => {
+    if(document.querySelector('.vertical-nav-links').style.display == 'none'){
+        document.querySelector('.vertical-nav-links').style.display = 'block'
+    }else{
+        document.querySelector('.vertical-nav-links').style.display = 'none'
+    }
+})
+var navLinks = [...document.querySelectorAll('.navlink')]
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', ()=>{
+        if(document.documentElement.clientWidth < 480)
+        document.querySelector('.vertical-nav-links').style.display = 'none'
+    })
+})
 
 
 
