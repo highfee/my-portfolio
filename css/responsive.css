@@ -1,0 +1,147 @@
+@media (max-width: 1030px){
+    .home img{
+        left: -20px;
+    }
+}
+/* responsive design */
+/* for tab */
+
+@media (max-width: 768px){
+    body{
+        font-size: 1rem;
+    }
+    .container{
+        max-width: 90%;
+    }
+    .vertival-nav{
+        display: block;
+        padding: 20px 0;
+    }
+    .vertival-nav nav{
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+    }
+    .home{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 50px;
+        height: max-content;
+    }
+    .home img{
+        left: 0;
+    }
+    .home nav{
+        display: none;
+    }
+    .skills{
+        grid-template-columns: 1fr;
+    }
+    .experience-grid{
+        grid-template-columns: 1fr;
+    }
+    .contact .grid{
+        grid-template-columns: 1fr;
+    }
+ }
+
+ /* for smaller screen */
+ @media (max-width: 480px){
+     .vertival-nav{
+         height: 70px;
+         padding: 0 30px;
+         
+     }
+     .vertival-nav nav{
+         position: relative;
+     }
+
+    .vertival-nav .vertical-nav-links{
+        display: none;
+        position: absolute;
+        margin: 0;
+        top: 90px;
+        height: calc(100vh - 80px);
+        background-color: #130a0a;
+        width: 100%;
+        transition: all .5s ease-in-out;
+    }
+    .vertival-nav .vertical-nav-links ul{
+        flex-direction: column;
+    }
+    .vertival-nav i{
+        display: inline-block;
+    }
+    .vertival-nav nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: -20%;
+        
+    }
+    .vertival-nav nav ul{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       position: relative;
+       /* left: -40px; */
+    }
+    
+    .vertival-nav nav ul li:hover{
+        background: #333;
+        border: none;
+    }
+    .vertival-nav nav ul li a{
+        display: block;
+        padding: 20px 0;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .vertival-nav nav ul li a:hover{
+        background-color: #333;
+        border: none;
+    }
+    .large{
+        line-height: 50;
+    }
+    .home-image img{
+        width: 250px;
+        height: 250px;
+        display: block;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .buttons a{
+        width: 50%;
+        font-weight: bold;
+    }
+    textarea{
+        height: 180px;
+    }
+    .ml4{
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+    }
+   
+    .contact p span{
+        /* position: relative; */
+        left: 1rem !important;
+    }
+    #place{
+        left: 1.2rem !important;
+    }
+    .contact .row{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .home, .specializes-area, .portfolio, .experience,.contact{
+        padding: 40px 30px;
+    }
+ }
